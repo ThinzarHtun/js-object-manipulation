@@ -16,7 +16,7 @@ for (let i = 0; i < sculptureList.length; i++) { // Loop through the list using 
 
     for (const element in sculptureList[i]) { // Loop through each key in the object
         // Trim spaces and calculate the length of the actual string value
-        lengthObject[element] = sculptureList[i][element].trim().length; 
+        lengthObject[element] = sculptureList[i][element].length; 
     }
 
     sculptureListLengths[i] = Object.assign({}, lengthObject); // Assign the object to the array using indexing
